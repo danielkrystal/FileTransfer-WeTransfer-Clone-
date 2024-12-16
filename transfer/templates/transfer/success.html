@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+</head>
+<body>
+    <h1>File Uploaded Successfully!</h1>
+    <p>Share this link (expires in 7 Days):</p>
+    <input type="text" value="http://127.0.0.1:8000/download/{{ link }}" readonly>
+    <button onclick="navigator.clipboard.writeText(document.querySelector('input').value)">Copy Link</button>
+</body>
+</html>
